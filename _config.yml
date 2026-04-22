@@ -1,0 +1,9 @@
+frontend:
+  phases:
+    build:
+      commands:
+        - echo "No build needed"
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
