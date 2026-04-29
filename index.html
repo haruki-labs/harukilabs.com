@@ -64,11 +64,18 @@
         text-align: center;
       }
 
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+
       .logo {
-        width: 140px;
+        width: 44px;
         height: auto;
         display: block;
-        margin-bottom: 12px;
+        flex-shrink: 0;
       }
 
       .wordmark {
@@ -76,7 +83,7 @@
         font-size: 28px;
         letter-spacing: 4px;
         text-transform: uppercase;
-        margin: 0 0 16px;
+        margin: 0;
       }
 
       .tagline {
@@ -109,9 +116,13 @@
       }
 
       @media (min-width: 640px) {
+        .brand {
+          gap: 16px;
+          margin-bottom: 20px;
+        }
+
         .logo {
-          width: 168px;
-          margin-bottom: 16px;
+          width: 52px;
         }
 
         .wordmark {
@@ -127,9 +138,11 @@
 
   <body>
     <main>
-      <img src="assets/haruki_mark.svg" alt="Haruki Labs mark" class="logo" />
-      <h1 class="wordmark">Haruki Labs</h1>
-      <p class="tagline">An independent software studio.</p>
+      <div class="brand">
+        <img src="assets/haruki_mark.svg" alt="Haruki Labs mark" class="logo" />
+        <h1 class="wordmark">Haruki Labs</h1>
+      </div>
+      <p class="tagline">Makers of native Mac and iOS software.</p>
       <a class="contact" href="mailto:hello@harukilabs.com">hello@harukilabs.com</a>
     </main>
 
