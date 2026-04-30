@@ -110,9 +110,25 @@
 
       footer {
         padding: 24px;
-        text-align: center;
         font-size: 13px;
         color: var(--muted);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .footer-link {
+        color: var(--muted);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 1px;
+        transition: color 0.15s ease, border-color 0.15s ease;
+      }
+
+      .footer-link:hover {
+        color: var(--gold);
+        border-color: var(--gold);
       }
 
       @media (min-width: 640px) {
