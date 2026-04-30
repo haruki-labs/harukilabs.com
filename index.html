@@ -112,10 +112,13 @@
         padding: 24px;
         font-size: 13px;
         color: var(--muted);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
+        text-align: center;
+      }
+
+      .footer-sep {
+        margin: 0 8px;
+        color: var(--muted);
+        opacity: 0.6;
       }
 
       .footer-link {
@@ -162,6 +165,10 @@
       <a class="contact" href="mailto:hello@harukilabs.com">hello@harukilabs.com</a>
     </main>
 
-    <footer>&copy; 2026 Haruki Labs LLC</footer>
+    <footer>
+      <span>&copy; 2026 Haruki Labs LLC</span>
+      <span class="footer-sep">|</span>
+      <a class="footer-link" href="privacy.html">Privacy</a>
+    </footer>
   </body>
 </html>
